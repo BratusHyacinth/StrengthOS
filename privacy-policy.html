@@ -125,7 +125,7 @@
     </header>
 
     <div class="highlight-box">
-      <p><strong>TL;DR:</strong> StrengthOS collects no personal data. Your information is stored only on your device and, where you enable it, in your own private iCloud account. The developer operates no server and never receives, accesses, sells, or shares your data.</p>
+      <p><strong>Summary:</strong> StrengthOS collects no personal data. Your information is stored only on your device and, where you enable it, in your own private iCloud account. The developer operates no server and never receives, accesses, sells, or shares your data.</p>
     </div>
 
     <div class="disclaimer-box">
@@ -144,7 +144,14 @@
 
     <h2>3. On-Device Storage</h2>
     <p>
-      Data you create or that the App reads from Apple Health is stored locally on your device, protected by the operating system's standard on-device encryption. Data read from or derived from Apple Health (HealthKit) — including, where authorized, heart rate, energy expenditure, workouts, sleep, and dietary nutrition, together with any values computed from them — is retained solely on your device and is never written to iCloud, in accordance with Apple App Review Guideline 5.1.3. Apple Health access is optional, read access and write access may each be granted or revoked independently, and the App remains functional without it.
+      Data you create or that the App reads from Apple Health is stored locally on your device, protected by the operating system's standard on-device encryption. Data read from or derived from Apple Health (HealthKit), including, where authorized, heart rate, energy expenditure, workouts, sleep, dietary nutrition, and body composition (body mass, body fat percentage, lean body mass), together with any values computed from them, is retained solely on your device, is excluded from device backups, and is never written to iCloud, in accordance with Apple App Review Guideline 5.1.3. Apple Health access is optional, read access and write access may each be granted or revoked independently, and the App remains functional without it.
+    </p>
+
+    <p>
+      The App uses the device camera solely to read a printed nutrition-facts label when you choose to scan one while logging a meal; this text recognition is performed entirely on your device using Apple's on-device frameworks, no photograph or image is captured, stored, or transmitted, and camera access may be granted or revoked at any time via iOS Settings → Privacy & Security → Camera → StrengthOS.
+    </p>
+    <p>
+      When you describe a meal in words, whether typed in the App or spoken to Siri, that description is interpreted entirely on your device, using Apple's on-device Foundation Models framework together with the App's bundled food database; the text is not transmitted to the Developer or to any third-party server, and the App provides no cloud-processing path for it. Where you use Siri, the speech recognition itself is performed by Apple under Apple's own privacy policy, and the App receives only the resulting text.
     </p>
 
     <h2>4. iCloud Storage</h2>
@@ -159,7 +166,7 @@
 
     <h2>6. Legal Compliance</h2>
     <p>
-      The App is designed to comply with all applicable data-protection and privacy laws, including without limitation the EU General Data Protection Regulation (GDPR), the California Consumer Privacy Act (CCPA/CPRA), the New York SHIELD Act, and Apple's App Store and HealthKit requirements. Because the Developer collects and processes no personal data, the rights afforded under such laws — including rights of access, correction, portability, deletion, and objection — are satisfied directly through your own control of the data on your device and in your iCloud account, as described in Section 8.
+      The App is designed to comply with all applicable data-protection and privacy laws, including without limitation the EU General Data Protection Regulation (GDPR), the California Consumer Privacy Act (CCPA/CPRA), the New York SHIELD Act, and Apple's App Store and HealthKit requirements. Because the Developer collects and processes no personal data, the rights afforded under such laws, including rights of access, correction, portability, deletion, and objection, are satisfied directly through your own control of the data on your device and in your iCloud account, as described in Section 8.
     </p>
 
     <h2>7. Children's Privacy</h2>
@@ -168,10 +175,11 @@
     </p>
 
     <h2>8. Your Control and Data Deletion</h2>
-    <p>You retain complete control over all data associated with the App at all times. To remove your data:</p>
+    <p>You retain complete control over all data associated with the App at all times. To export or remove your data:</p>
     <ul>
+      <li><strong>Data export:</strong> export a copy of your data, including Apple Health–derived data, as CSV or JSON files via Settings → Export Data within the App. Export files are created on your device and leave it only if you choose to share or save them elsewhere.</li>
       <li><strong>On-device data:</strong> delete the App from your device to remove all locally stored data, including all Apple Health–derived data.</li>
-      <li><strong>iCloud data:</strong> remove the App's data via iOS Settings → your name → iCloud, or sign out of iCloud.</li>
+      <li><strong>iCloud data:</strong> delete the App's iCloud data via iOS Settings → your name → iCloud → Manage Storage → StrengthOS. Signing out of iCloud does not delete data already stored in iCloud.</li>
       <li><strong>Apple Health access:</strong> revoke read or write permissions at any time via iOS Settings → Privacy &amp; Security → Health → StrengthOS.</li>
     </ul>
     <p>Because the Developer holds no copy of your data, there is nothing for the Developer to retrieve, export, or delete on your behalf. Deletion is permanent and cannot be restored by the Developer.</p>
